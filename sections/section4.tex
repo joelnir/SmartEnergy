@@ -1,0 +1,130 @@
+\section{The (Smart) Power Grid}
+Electricity is different than most types of energy because of its limited storage and its enforced balance betweem supply and demand. It is however very versatile both in generation and usage.
+
+\subsection{The Power Grid}
+
+\subsubsection{Electricity Transportation}
+High voltages are used for long distance transmissions to reduce resistive line losses. There are also capacitive and inductive losses.
+Transformers create losses of about 1\%, but this still represents a major part of the total loss in electricty distribution.\\
+
+Both AC (Alternating Current) and DC (Direct Current) is used in electricity transmission.
+AC losses increase with distance.
+DC has a higher intial loss, but it does not vary much with distance, so typically used only for longer distances.
+
+\subsubsection{The Transmission Network}
+The power grid is typically split into transmission network and distribution network.
+The distribution network is tree shaped and closest to the consumers.
+The transmission network is a mesh network covering large areas.
+Because of the structure of the transmission network is has to be managed and controlled carefully.
+The transimssion network is connected to multiple countries and handles import and export of electricity. In Europe the grid operators have formed an association to keep the electricity supply of Europe reliable.
+
+\subsubsection{Balancing the Grid}
+Electricity supply and demand must always be kepy in balance to prevent total balckout.
+This is achieved by adjustment both on the supplier and consumer side.
+The few buffers that exist (mainly pumped hydro) can also be used. Imbalance in the grid is detected by deviations in voltage and frequency (should be at 230 V, 50 Hz).\\
+
+Balancing is performed in three steps
+\begin{labeling}{\textbf{Secondary Control}}
+\item [\textbf{Primary Control}] Activated automatically within seconds on frequency deviation. Goal is to bring frequency back to acceptable values.
+\item [\textbf{Secondary Control}] Activates within seconds to minutes. Typically pumped hydro or gas turbines than can be deployed quickly. Goal is to rebalance supply and demand.
+\item [\textbf{Tetiary Control}] Manually activated within minutes up to an hour. Peaking power plants are used, typically gas.
+\end{labeling}
+
+An unplanned plant outage can have consequences that spread throughout the grid.
+It can cause further failures and power outages.
+If the standard measures fail to balance the grid this can result in load shedding, where the demand is adjusted (lowered) to prevent a complete system breakdown.
+
+\subsection{Smart Grids}
+The introduction of volatile, renewable electricity generation introduces a challenge to balancing the grid.
+Consumer trends are also cahnging, allowing for distributed micro generation.
+The classical paradigm of production blindly following demand can now be challenged by changing demand as response to production.
+
+\subsubsection{Volatile Generation}
+An important part of balancing the net is peak shaving and/or peak shifting.
+This is even more important with volatile, renewable generation.
+These consumption peaks particularly costly as they require deploying special, fossil fuel powered peaker plants.
+
+\subsubsection{Distibuted Micro-Generation}
+The main driver behind micro-generation is consumers with PV that could feed any unneeded energy back into the grid.
+This means that the distribution network needs to fill a new role.
+The simple distribution network becomes much more complex and is in need of new smart solutions.
+
+\subsubsection{Electric Vehicles (EVs)}
+EVs can lead to major decarbonization.
+Since most people arrive home at similair times a large fleet of EVs would result in huge peak loads.
+There is a need for smart solutions to shift these peaks.
+
+\subsubsection{Failure Protection}
+Because of its mesh structure failures in the power grid have tenddency to propagate.
+A resilient grid could withstand and recover from damaging conditions.
+A smarter grid could improve resiliency by
+\begin{labeling}{\textbf{Prediction}}
+    \item [\textbf{Prediction}] of weak points in the network and arising problems
+    \item [\textbf{Detection}] of failures automatically to quickly deploy response
+    \item [\textbf{Isolation}] of failures automatically to prevent issues to spread
+\end{labeling}
+
+\subsubsection{Grid Security}
+Electricity is a key resource so the power grid is part of critical infrastructure.
+Reliable operation of the grid depends highly on computerized control systems.
+There is a substantial cyber security threat to these systems.
+As the grid is becoming smarter this vastly increase the attack surface for such cyber attacks.
+In particular as older hardware and software is combined with modern solutions new attack vectors are often introuduced.
+
+\subsubsection{What is the Smart Grid?}
+There is no one definition for smart grid.
+It generally refers to the integration of a set of advanced ICT into the grid.
+These technologies involve sensing, control, communications and intelligent decision making.
+The smart grid adds value in the form of information to the power grid.
+The grid was constructed with under the premise that information was expensive, but that is no longer the case.
+Smart grids add information about supply, demand, value of electricity etc.
+The information adds value as it is presented to people or systems so that it can be acted upon.\\
+
+\begin{tcolorbox}
+\textbf{Smart Grid; A Definition}\\
+The Smart Grid can be regarded as an electric system
+that uses information, two-way, cyber-secure
+communication technologies, and computational
+intelligence in an integrated fashion across electricity
+generation, transmission, substations, distribution and
+consumption to achieve a system that is clean, safe,
+secure, reliable, resilient, efficient, and sustainable.
+\end{tcolorbox}
+
+\subsubsection{Smart Grid Technologies}
+\begin{labeling}{\textbf{Virtual Power Plants (VPPs)}}
+    \item [\textbf{Renewables}]
+    The introduction of renewable electricity generation has a central role in the smart grid.
+
+    \item [\textbf{Energy Storage}]
+    New types of storage, including large scale batteries, allow for both rapidly deployable primary control and use at peak load.
+
+    \item [\textbf{Electric Vehicles}]
+    The increased load from electric vehicles are a challenge to the grid.
+    EVs do however contain large batteries, allowing for smart interactions between grid and EV (use car batteries as storage and supply etc.).
+
+    \item [\textbf{Demand Response}]
+    With economic incentives one can change the demand instead of supply at peak load times.
+    The economical incentives can be both in the form of electricity prize and other incentive payments.
+
+    \item [\textbf{Virtual Power Plants (VPPs)}]
+    VPPs are a way to aggregate a set smaller energy resources into one virtual entity that can be centrally controlled.
+    In particular the functionality of being able to switch on and off woul be usefull for balancing the grid.
+
+    \item [\textbf{Smart Meters}]
+    Smart meters are sensors that measure electricity usage (can also be used for gas and water). They can have a granularity as low as 1kHz.
+
+
+    \item [\textbf{Powerline Sensors}]
+    Placing heat and wind sensors on power line can help detect problems and prevent powerline failures.
+
+
+    \item [\textbf{Adjustable Transformers}]
+    Adjustable transformers are able to send and adpat to the local distribution network.
+
+
+    \item [\textbf{Algorithms}]
+    With modern algorithms the electricity market can be modelled as an optimization problem. The input is expected weather, existing power plants and expected loads. Under the constraint that the grid should be balanced one can calculate a plan for which plants to dispatch and how to trade electricity.
+
+\end{labeling}
+
