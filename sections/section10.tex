@@ -1,0 +1,68 @@
+\section{Smart Grid Security}
+Electricity is a key resource and therefore the grid is part of critical infrastructure.
+Energy security typically has reffered to geopolitics, accidents and natural disasters.
+Energy security is increasingly a matter if cybersecurity.
+
+\subsection{Critical Infrastructure}
+Critical infrastructure is infrastructure that is a critical enabler of economic activity and social welfare.
+Economies tend to become increasingly specialized and rely more on critical infastructure for key resources and services.\\
+
+The electrical grid has evolved over a long time and therefore contains of a mix of old and new technology.
+The electrical grid is a patchwork of both physical and organisational networks.
+It is highly dynamic and mutually interdependent with other critical infrastructure (in particular ICT).
+This creates risk for cascading effects if one piece of critical infrastructure should break down.
+Cyber-attacks against critical infrastructure has been proven to be a real threat.
+
+\subsection{Fragility of Electricity Grids}
+The implementation of smart grids potentially increase reliability thanks to fault detection and isolation.
+Islanding (isolating self sustaining portions of the grid from problems) can make the grid more robust.
+These improvements do however come at a cost of increased complexity and a larger attack surface for cyber attacks.\\
+
+The physcial properties of electricity make the grid particularly hard to control.
+Electricity travels at the speed of light, making it impossible for human decision makers to react to problem.
+Electricity flows in all paths available and can not easily be stopped with some valve or switch.\\
+
+\begin{tcolorbox}
+    \textbf{Blackouts}
+    \begin{labeling}{\textbf{Germany, 2006}}
+    \item [\textbf{US, 2003}]
+        A tree flashover caused a domino effect.
+        Operators did not notice that power lines went out of service because of bug (race condition) in monitoring software.
+    \item [\textbf{Italy, 2003}]
+        Tree flashover in Switzerland caused blackout of nearly all of Italy through domino effect.
+    \item [\textbf{Germany, 2006}]
+    Scheduled shutdown of a line to allow a crusie ship safe passage result in unforseen cascade of line overloads.
+        Europe was split in separate areas to stop cascade.
+        Luckily automatic countermeasured managed to rebalance the grid.
+    \end{labeling}
+
+Blackouts of the electrical grids in all cases spilled over and severly crippled other critical infrastructure.
+All these failures show that local problems quickly result in far-reaching consequences.
+\end{tcolorbox}
+
+\subsection{Cyber Attacks Against the Electrical grid}
+The smart grid presents large challenges in cyber security.
+The industry trend is to replace specialized software and hardware with commercial off-the-shelf systems using general internet based technology.
+Physical security is an issue, especially considering the locations of much of the smart grid technology.
+Maintaining high security as grids are getting smarter proves to be a challenge since most utilities do not have much experience with cyber security.\\
+
+Some properties and changes of the smart grid that increas the attack surface are
+\begin{itemize}
+    \item Legacy systems
+    \item Increased interconnection of systems
+    \item New 2-way systems
+    \item New customer touch points
+    \item More subsystems, larger code base
+\end{itemize}
+
+\subsubsection{Examples of Cyber Attacks Against Electricity Infrastructure}
+\begin{labeling}{\textbf{SQL Slammer Worm}}
+    \item [\textbf{SQL Slammer Worm}]
+    Worm that infected US nuclear power plant in 2003.
+    Spread through business network to control network, eventually causing a denial of service of the control system.
+    Fortunately did not affect analog backup system.
+    \item [\textbf{Stuxnet}]
+    Highly specialized computer worm infecting Windows systems. Carries malware payload specifically targeted at Siemens control systems.
+    The target of Stuxnet was the Iranian uranium enrichment infrastructure.
+    It is largely believed that the worm was created by US and Israelian cyber warfare institutions.
+\end{labeling}
