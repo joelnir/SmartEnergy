@@ -24,7 +24,7 @@ Disaggregating electricity consumption is a challenging task, encountering issue
 \begin{itemize}
     \item Noise in measurements
     \item Devices with highly variable load
-    \item Devices with similair signatures (or even multiple of same device)
+    \item Devices with similar signatures (or even multiple of same device)
 \end{itemize}
 
 NILM typically requires a training period during which different devices are switched on and off.
@@ -47,7 +47,7 @@ $$
 Q = I \cdot V \cdot \sin(\varphi)
 $$
 where $V$ is voltage, $I$ current and $\varphi$ the phase shift.
-Combining mesasurments of real and reactive power creates a 2D-space for electric fingerprints, as can be seen in figure \ref{fig:real_reactive_power}.
+Combining measurments of real and reactive power creates a 2D-space for electric fingerprints, as can be seen in figure \ref{fig:real_reactive_power}.
 Note that even in this 2D space there are still clear clusterings of some appliances.
 
 \begin{figure}
@@ -74,8 +74,8 @@ Note that measuring these trajectories requires rather high efforts.
 If measurements are performed at $\gg 50$ Hz the shape of the current or power waveform itself can be used as a fingerprint.
 Examples can be seen in \ref{fig:nilm_waveform}.
 With high enough sampling frequency one can even consider the shape of single turn-on and turn-off events for different appliances.
-Signatures can also be used from freqency analysis.
-Another frequency-based signature is the Electromagnetic Interfernece (EMI) of different devices.
+Signatures can also be used from frequency analysis.
+Another frequency-based signature is the Electromagnetic Interference (EMI) of different devices.
 Note however that frequency measurements require very high sampling rates (As per the sampling theorem one has to sample with twice the frequency of the highest frequency component of interest).
 
 \begin{figure}
@@ -89,15 +89,15 @@ Note however that frequency measurements require very high sampling rates (As pe
 A complete database of electric signatures can combine any of the fingerprints in \ref{sec:electric_fingerprints}.
 It can include both signatures of on-off switches and of running appliances.
 Building this database requires a learning phase.
-Learning can be done completelty manually (recording switching on and off appliances) or by learning them automatically (supervised or unsupervised training).
+Learning can be done completely manually (recording switching on and off appliances) or by learning them automatically (supervised or unsupervised training).
 Some generic features could be retrieved from global databases to simplify learning.\\
 
-\subsection{The NILM process}
-The complete NILM process generally look like
+\subsection{The NILM Process}
+The complete NILM process generally looks like
 
 \begin{enumerate}
     \item Capture data
-    \item Normalize adn filter out noise
+    \item Normalize and filter out noise
     \item Detect events
     \item Match signature to database
     \item Application specific processing
